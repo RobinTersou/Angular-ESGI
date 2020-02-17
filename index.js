@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var pokemon_1 = require("./models/pokemon");
+var fight_1 = require("./models/fight");
+var pokemon1;
+var pokemon2;
+pokemon1 = new pokemon_1.Pokemon("Bulbizarre", 2, 100, 12, 4);
+pokemon2 = new pokemon_1.Pokemon("Salamèche", 1, 100, 15, 2);
+var fight = new fight_1.Fight(pokemon1, pokemon2);
+fight.start();
+console.log(pokemon1);
+console.log(pokemon2);
